@@ -50,8 +50,8 @@
 				for(Map.Entry<String, Double> i: l.entrySet()){
 					out.println("<div style='padding-left:40px'>");
 					out.println("<br>");
-					out.println("<a id='title' style='text-overflow: ellipsis;'  href='"+i.getKey()+"'><h3 style='text-overflow: ellipsis;'>"+ t.get(i.getKey()) +"</h3></a>");
-					out.println("<a id='url' style='text-overflow: ellipsis;' href='"+i.getKey()+"'><h6 style='text-overflow: ellipsis;' >"+i.getKey()+"</h6></a>");
+					out.println("<a id='title' style='text-overflow: overflow:hidden'  href='"+i.getKey()+"'><h3 style='text-overflow: ellipsis; overflow:hidden'>"+ t.get(i.getKey()) +"</h3></a>");
+					out.println("<a id='url' style='text-overflow: ellipsis;width:300px; overflow:hidden' href='"+i.getKey()+"'><h6 style='text-overflow: ellipsis; width:300px; overflow:hidden' >"+i.getKey()+"</h6></a>");
 					out.println("<h6 id='article'>"+ c.get(i.getKey()).substring(c.get(i.getKey()).length()/2) +"</h6><br>");
 					out.println("</div>");
 					
@@ -66,7 +66,6 @@
 		<div class="logo">
 			<img align="center" class="float-right center" src="ut.png" hight="200px" width="200px" hspace="100">
 			<br><br>
-			<h2 align="center"> Parsa heidary Moghadam </h2>
 			<h2 align="center"> University of Tehran </h2>
 			<h2 align="center"> Department of Algorithm and Computation </h2>
 		</div>
