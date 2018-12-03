@@ -1,0 +1,44 @@
+
+#title{
+	color:blue;
+}
+
+#url{
+	color:green;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	
+    max-width: 50ch;
+}
+
+
+#article{
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.center {
+    margin: auto;
+    width: 100%;
+    padding: 100px;
+}
+
+.main{
+	left : 100px;
+	text-align : left;
+}
+
+.logo{
+}
+
+img{
+}
+
+.search-class{
+	position: relative;
+	top:20px;
+	left:20px;
+}

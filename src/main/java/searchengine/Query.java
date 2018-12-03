@@ -187,4 +187,12 @@ public class Query implements IndexerInterface{
 	public Map<String, Double> getSearchResult(){
 		return this.searchResult;
 	}
+	
+	public Map<String, String> getContent(){
+		return this.contentRepo;
+	}
+	
+	public Map<String, String> getTitle(){
+		return this.title;
+	}
 }

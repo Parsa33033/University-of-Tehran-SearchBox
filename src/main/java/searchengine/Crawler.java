@@ -40,6 +40,7 @@ public class Crawler implements CrawlerInterface , Runnable{
 					this.urlsToCrawl.removeAll(this.crawledUrls);
 					indexerAdapter.linkIndex(nextUrl, links);
 					indexerAdapter.TextAcquisition(nextUrl);
+					indexerAdapter.setTitle();
 				}
 				indexerAdapter.disconnectFromUrl();
 			}

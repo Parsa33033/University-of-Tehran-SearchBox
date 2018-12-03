@@ -12,4 +12,5 @@ public interface IndexerInterface {
 	Map<String, String> contentRepo = Collections.synchronizedMap(new HashMap<String, String>());
 	Map<String, Map<String, Double>> fwdIndex = Collections.synchronizedMap(new HashMap<String, Map<String, Double>>());
 	Map<String, Map<String, Double>> invertedIndex = Collections.synchronizedMap(new HashMap<String, Map<String, Double>>());
+	Map<String, String> title = Collections.synchronizedMap(new HashMap<String, String>());
 }

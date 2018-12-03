@@ -26,6 +26,7 @@ public class IndexerAdapter implements IndexerInterface{
 	private Document doc;
 	private boolean documentFound = true;
 	private TextAcquisition ta;
+	private String url;
 	
 	/**
 	 * 
@@ -40,6 +41,7 @@ public class IndexerAdapter implements IndexerInterface{
 	 */
 	public void connectToUrl(String urlString) {
 		try {
+			this.url = urlString;
 			URL url = new URL(urlString);
 			con = (HttpURLConnection) url.openConnection();
 			getDocument();
@@ -89,6 +91,11 @@ public class IndexerAdapter implements IndexerInterface{
 			return tempLinks;
 		}
 		return null;
+	}
+	
+	public void setTitle() {
+		Elements elmts = doc.select("title");
+		this.title.put(this.url, elmts.text());
 	}
 	
 	/**
